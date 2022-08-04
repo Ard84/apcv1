@@ -16,7 +16,7 @@
             "if": {
                 "not": {
                     "field": "location",
-                    "in": "[parameters(''allowedLocations'')]"
+                    "in": "[parameters('allowedLocations')]"
                 }
             },
             "then": {
