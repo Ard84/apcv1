@@ -1,0 +1,27 @@
+{
+    "DisplayName":  "Allow connection from Trusted locations",
+    "State":  "enabled",
+    "Conditions":  {
+                       "Applications":  {
+                                            "IncludeApplications":  [
+                                                                        "All"
+                                                                    ]
+
+                       "Users":  {
+                                     "IncludeUsers":  [
+                                                          "All"
+                                                      ]
+
+                                 },
+                       "Locations":  {
+                                         "IncludeLocations":  [
+                                                                  "16a120a5-9a23-4e38-8ce9-b704cb823d69"
+                                                              ]
+                   },
+    "GrantControls":  {
+                          "Operator":  "OR",
+                          "BuiltInControls":  [
+                                                  "Allow"
+                                              ]
+                      }
+}
