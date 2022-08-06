@@ -20,7 +20,7 @@
         "grantcontrols":  {
             "operator":  "OR",
             "builtInControls":  [
-                0
+                "block"
             ]
         }
     }
