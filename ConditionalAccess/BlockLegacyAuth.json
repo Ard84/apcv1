@@ -6,11 +6,6 @@
             "exchangeActiveSync",
             "other"
         ],
-        "platforms": null,
-        "locations": null,
-        "deviceStates": null,
-        "devices": null,
-        "clientApplications": null,
         "applications": {
             "includeApplications": [
                 "All"
