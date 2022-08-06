@@ -1,0 +1,32 @@
+{
+    "displayName": "Block Legacy Authentication",
+    "state": "enabled",
+    "sessionControls": null,
+    "conditions": {
+        "clientAppTypes": [
+            "exchangeActiveSync",
+            "other"
+        ],
+        "platforms": null,
+        "locations": null,
+        "deviceStates": null,
+        "devices": null,
+        "clientApplications": null,
+        "applications": {
+            "includeApplications": [
+                "All"
+            ]
+        },
+        "users": {
+            "includeUsers": [
+                "All"
+            ],
+            "excludeUsers": [],
+            "includeGroups": [],
+            "excludeGroups": [
+                "c6754fc8-fffe-4065-a98a-f5a9ed3c43d6"
+            ],
+            "includeRoles": [],
+            "excludeRoles": []
+        }
+}
