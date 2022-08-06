@@ -1,26 +1,65 @@
 {
-    "displayName": "Block Legacy Authentication",
-    "state": "enabled",
-    "conditions": {
-        "clientAppTypes": [
-            "exchangeActiveSync",
-            "other"
-        ],
-        "applications": {
-            "includeApplications": [
-                "All"
-            ]
-        },
-        "users": {
-            "includeUsers": [
-                "All"
-                ]
-            }
-        },
-        "grantcontrols":  {
-            "operator":  "OR",
-            "builtInControls":  [
-                "block"
-            ]
-        }
-    }
+    "displayName":  "Blocking sign-ins for users attempting to use legacy authentication protocols",
+    "state":  "enabled",
+    "sessionControls":  null,
+    "conditions":  {
+                       "userRiskLevels":  [
+
+                                          ],
+                       "signInRiskLevels":  [
+
+                                            ],
+                       "clientAppTypes":  [
+                                              "exchangeActiveSync",
+                                              "other"
+                                          ],
+                       "platforms":  null,
+                       "locations":  null,
+                       "applications":  {
+                                            "includeApplications":  [
+                                                                        "All"
+                                                                    ],
+                                            "excludeApplications":  [
+
+                                                                    ],
+                                            "includeUserActions":  [
+
+                                                                   ],
+                                            "includeAuthenticationContextClassReferences":  [
+
+                                                                                            ]
+                                        },
+                       "users":  {
+                                     "includeUsers":  [
+                                                          "All"
+                                                      ],
+                                     "excludeUsers":  [
+
+                                                      ],
+                                     "includeGroups":  [
+
+                                                       ],
+                                     "excludeGroups":  [
+
+                                                       ],
+                                     "includeRoles":  [
+
+                                                      ],
+                                     "excludeRoles":  [
+
+                                                      ]
+                                 }
+                   },
+    "grantControls":  {
+                          "operator":  "OR",
+                          "builtInControls":  [
+                                                  "block"
+                                              ],
+                          "customAuthenticationFactors":  [
+
+                                                          ],
+                          "termsOfUse":  [
+
+                                         ]
+                      }
+}
