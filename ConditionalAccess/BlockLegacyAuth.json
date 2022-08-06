@@ -20,20 +20,13 @@
         "users": {
             "includeUsers": [
                 "All"
-            ],
-            "excludeUsers": [],
-            "includeGroups": [],
-            "excludeGroups": [
-                
-            ],
-            "includeRoles": [],
-            "excludeRoles": []
+                ]
+            }
         },
-        "GrantControls":  {
-                          "operator":  "OR",
-                          "builtInControls":  [
-                                    "0"
-                                  ]
-                      }
+        "grantcontrols":  {
+            "operator":  "OR",
+            "builtInControls":  [
+                "0"
+            ]
+        }
     }
-
