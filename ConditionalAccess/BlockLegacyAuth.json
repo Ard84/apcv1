@@ -30,16 +30,10 @@
             "excludeRoles": []
         },
         "GrantControls":  {
-                          "_Operator":  "OR",
-                          "BuiltInControls":  [
-                                                  0
-                                              ],
-                          "CustomAuthenticationFactors":  [
-
-                                                          ],
-                          "TermsOfUse":  [
-
-                                         ]
+                          "operator":  "OR",
+                          "builtInControls":  [
+                                    "0"
+                                  ]
                       }
     }
 }
