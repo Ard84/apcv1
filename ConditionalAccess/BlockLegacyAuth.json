@@ -24,10 +24,22 @@
             "excludeUsers": [],
             "includeGroups": [],
             "excludeGroups": [
-                "c6754fc8-fffe-4065-a98a-f5a9ed3c43d6"
+                
             ],
             "includeRoles": [],
             "excludeRoles": []
-        }
+        },
+        "GrantControls":  {
+                          "_Operator":  "OR",
+                          "BuiltInControls":  [
+                                                  0
+                                              ],
+                          "CustomAuthenticationFactors":  [
+
+                                                          ],
+                          "TermsOfUse":  [
+
+                                         ]
+                      }
     }
 }
