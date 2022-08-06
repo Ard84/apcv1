@@ -3,20 +3,14 @@
     "state": "enabled",
     "sessionControls": null,
     "conditions": {
-        "signInRiskLevels": [],
-        "clientAppTypes": [],
         "platforms": null,
         "locations": null,
         "applications": {
             "includeApplications": [
                 "All"
             ],
-            "excludeApplications": [],
-            "includeUserActions": []
         },
         "users": {
-            "includeUsers": [],
-            "includeGroups": [],
             "excludeGroups": [
                 "f753047e-de31-4c74-a6fb-c38589047723"
             ],
@@ -28,8 +22,7 @@
                 "3a2c62db-5318-420d-8d74-23affee5d9d5",
                 "b1be1c3e-b65d-4f19-8427-f6fa0d97feb9",
                 "17315797-102d-40b4-93e0-432062caca18",  
-            ],
-            "excludeRoles": []
+            ]
         }
     },
     "grantControls": {
