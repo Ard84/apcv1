@@ -1,52 +1,20 @@
 {
-    "displayName":  "Blocking sign-ins for users attempting to use legacy authentication protocols",
+    "displayName":  "Block legacy authentication",
     "state":  "enabled",
     "sessionControls":  null,
     "conditions":  {
-                       "userRiskLevels":  [
-
-                                          ],
-                       "signInRiskLevels":  [
-
-                                            ],
                        "clientAppTypes":  [
                                               "exchangeActiveSync",
                                               "other"
                                           ],
-                       "platforms":  null,
-                       "locations":  null,
                        "applications":  {
                                             "includeApplications":  [
                                                                         "All"
-                                                                    ],
-                                            "excludeApplications":  [
-
-                                                                    ],
-                                            "includeUserActions":  [
-
-                                                                   ],
-                                            "includeAuthenticationContextClassReferences":  [
-
-                                                                                            ]
+                                                                    ]
                                         },
                        "users":  {
                                      "includeUsers":  [
                                                           "All"
-                                                      ],
-                                     "excludeUsers":  [
-
-                                                      ],
-                                     "includeGroups":  [
-
-                                                       ],
-                                     "excludeGroups":  [
-
-                                                       ],
-                                     "includeRoles":  [
-
-                                                      ],
-                                     "excludeRoles":  [
-
                                                       ]
                                  }
                    },
@@ -54,12 +22,6 @@
                           "operator":  "OR",
                           "builtInControls":  [
                                                   "block"
-                                              ],
-                          "customAuthenticationFactors":  [
-
-                                                          ],
-                          "termsOfUse":  [
-
-                                         ]
+                                              ]
                       }
 }
