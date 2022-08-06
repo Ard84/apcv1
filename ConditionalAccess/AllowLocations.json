@@ -1,29 +1,28 @@
 {
-    "DisplayName":  "Allow connection from Trusted locations",
-    "State":  "enabled",
-    "Conditions":  {
-        "Applications":  {
-             "IncludeApplications":  [
+    "displayName":  "Allow connection from Trusted locations",
+    "state":  "enabled",
+    "conditions":  {
+        "applications":  {
+             "includeApplications":  [
                  "All"
             ]
          },
-        "Users":  {
-             "IncludeUsers":  [
+        "users":  {
+             "includeUsers":  [
                   "All"
               ]
          },
-        "Locations":  {
-             "IncludeLocations":  [
+        "locations":  {
+             "includeLocations":  [
                   "16a120a5-9a23-4e38-8ce9-b704cb823d69"
               ]
         }
     },
-    "GrantControls":  {
+    "grantControls":  {
         "operator":  "OR",
         "builtInControls":  [
-        "Allow"
-      ]
+        "mfa"
+              ]
           }
-        }
+}
     
-
