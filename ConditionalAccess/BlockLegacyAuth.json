@@ -1,7 +1,6 @@
 {
     "displayName": "Block Legacy Authentication",
     "state": "enabled",
-    "sessionControls": null,
     "conditions": {
         "clientAppTypes": [
             "exchangeActiveSync",
@@ -26,7 +25,7 @@
         "grantcontrols":  {
             "operator":  "OR",
             "builtInControls":  [
-                "0"
+                0
             ]
         }
     }
