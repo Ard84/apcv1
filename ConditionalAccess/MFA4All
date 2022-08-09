@@ -1,0 +1,27 @@
+{
+    "displayName": "Require MFA for All Users",
+    "state": "enabledForReportingButNotEnforced",
+    "sessionControls": null,
+    "conditions": {
+        "platforms": null,
+        "locations": null,
+        "applications": {
+            "includeApplications": [
+                "All"
+            ],
+        },
+        "users": {
+            "includeRoles": [
+                "All"  
+            ]
+        }
+    },
+    "grantControls": {
+        "operator": "OR",
+        "builtInControls": [
+            "mfa"
+        ],
+        "customAuthenticationFactors": [],
+        "termsOfUse": []
+    }
+}
