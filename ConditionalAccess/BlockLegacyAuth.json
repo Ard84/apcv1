@@ -1,6 +1,6 @@
 {
     "displayName":  "Block legacy authentication",
-    "state":  "enabled",
+    "state":  "enabledForReportingButNotEnforced",
     "sessionControls":  null,
     "conditions":  {
                        "clientAppTypes":  [
