@@ -1,6 +1,6 @@
 { 
     "displayName": "Require MFA for medium + sign-in risk", 
-    "state": "enabled", 
+    "state": "enabledForReportingButNotEnforced", 
     "conditions": { 
         "signInRiskLevels": [ "high" ,
             "medium" 
