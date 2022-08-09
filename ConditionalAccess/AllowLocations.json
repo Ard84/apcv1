@@ -1,6 +1,6 @@
 {
     "displayName":  "Allow connection from Trusted locations",
-    "state":  "enabled",
+    "state":  "enabledForReportingButNotEnforced",
     "conditions":  {
         "applications":  {
              "includeApplications":  [
