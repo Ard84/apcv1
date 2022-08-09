@@ -1,0 +1,27 @@
+{
+    "displayName": "Require MFA for Admin Actions",
+    "state": "enabledForReportingButNotEnforced",
+    "sessionControls": null,
+    "conditions": {
+        "platforms": null,
+        "locations": null,
+        "applications": {
+            "includeApplications": [
+                "797f4846-ba00-4fd7-ba43-dac1f8f63013"
+            ],
+        },
+        "users": {
+            "includeRoles": [
+                "All"  
+            ]
+        }
+    },
+    "grantControls": {
+        "operator": "OR",
+        "builtInControls": [
+            "mfa"
+        ],
+        "customAuthenticationFactors": [],
+        "termsOfUse": []
+    }
+}
