@@ -1,6 +1,6 @@
 {
     "displayName": "Require MFA for Admin Accounts",
-    "state": "enabled",
+    "state": "enabledForReportingButNotEnforced",
     "sessionControls": null,
     "conditions": {
         "platforms": null,
