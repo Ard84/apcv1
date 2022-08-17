@@ -11,7 +11,7 @@
             ],
         },
         "users": {
-            "includeRoles": [
+            "includeUsers": [
                 "All"  
             ]
         }
