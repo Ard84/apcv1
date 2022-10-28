@@ -1,0 +1,86 @@
+{
+  "properties": {
+    "displayName": "Force https-feature for web apps",
+    "policyType": "Custom",
+    "mode": "All",
+    "description": "This policy will enable https feature which redirect all http traffic to Https",
+    "metadata": {
+      "version": "1.0.1",
+      "category": "Security"
+    },
+    "parameters": {
+      "effect": {
+        "type": "String",
+        "metadata": {
+          "displayName": "Effect",
+          "description": "Enable or disable the execution of the policy"
+        },
+        "allowedValues": [
+          "Deny",
+          "Disabled",
+          "DeployIfNotExists"
+        ],
+        "defaultValue": "DeployIfNotExists"
+      }
+    },
+    "policyRule": {
+      "if": {
+        "field": "type",
+        "equals": "Microsoft.Web/sites"
+      },
+      "then": {
+        "effect": "[parameters('effect')]",
+        "details": {
+          "type": "Microsoft.Web/sites",
+          "name": "[field('name')]",
+          "existenceCondition": {
+            "field": "Microsoft.Web/sites/httpsOnly",
+            "equals": true
+          },
+          "roleDefinitionIds": [
+            "/providers/Microsoft.Authorization/roleDefinitions/de139f84-1756-47ae-9be6-808fbbe84772"
+          ],
+          "deployment": {
+            "properties": {
+              "mode": "incremental",
+              "template": {
+                "$schema": "http://schema.management.azure.com/schemas/2015-01-01/deploymentTemplate.json#",
+                "contentVersion": "1.0.0.0",
+                "parameters": {
+                  "webAppName": {
+                    "type": "string"
+                  },
+                  "location": {
+                    "type": "string"
+                  }
+                },
+                "resources": [
+                  {
+                    "type": "Microsoft.Web/sites",
+                    "apiVersion": "2018-11-01",
+                    "name": "[parameters('webAppName')]",
+                    "location": "[parameters('location')]",
+                    "properties": {
+                      "httpsOnly": true
+                    }
+                  }
+                ]
+              },
+              "parameters": {
+                "webAppName": {
+                  "value": "[field('name')]"
+                },
+                "location": {
+                  "value": "[field('location')]"
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  },
+  "id": "/providers/Microsoft.Management/managementGroups/TechData/providers/Microsoft.Authorization/policyDefinitions/6d2fe9ab-a85b-44d4-a39a-326ff6fba70b",
+  "type": "Microsoft.Authorization/policyDefinitions",
+  "name": "6d2fe9ab-a85b-44d4-a39a-326ff6fba70b"
+}
