@@ -79,8 +79,5 @@
         }
       }
     }
-  },
-  "id": "/providers/Microsoft.Management/managementGroups/TechData/providers/Microsoft.Authorization/policyDefinitions/6d2fe9ab-a85b-44d4-a39a-326ff6fba70b",
-  "type": "Microsoft.Authorization/policyDefinitions",
-  "name": "6d2fe9ab-a85b-44d4-a39a-326ff6fba70b"
+  }
 }
