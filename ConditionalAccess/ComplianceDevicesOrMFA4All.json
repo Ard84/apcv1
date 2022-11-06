@@ -9,10 +9,18 @@
           "all"
         ],
         "servicePrincipalRiskLevels": [],
-        "platforms": [
-          "windows",
-          "macos"
-        ],
+        "platforms": {
+          "includePlatforms": [
+            "windows",
+            "macOS"
+          ],
+          "excludePlatforms": [
+            "android",
+            "iOS",
+            "linux"
+          ]
+        }
+      },
         "locations": null,
         "devices": null,
         "clientApplications": null,
