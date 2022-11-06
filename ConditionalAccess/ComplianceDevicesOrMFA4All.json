@@ -1,0 +1,52 @@
+{
+    "displayName": "Click2Run - Require Compliance Devices or MFA for All Users",
+    "state": "enabledForReportingButNotEnforced",
+      "sessionControls": null,
+      "conditions": {
+        "userRiskLevels": [],
+        "signInRiskLevels": [],
+        "clientAppTypes": [
+          "all"
+        ],
+        "servicePrincipalRiskLevels": [],
+        "platforms": [
+          "windows",
+          "macos"
+        ],
+        "locations": null,
+        "devices": null,
+        "clientApplications": null,
+        "applications": {
+          "includeApplications": [
+            "All"
+          ],
+          "excludeApplications": [],
+          "includeUserActions": [],
+          "includeAuthenticationContextClassReferences": []
+        },
+        "users": {
+          "includeUsers": [
+            "all"
+          ],
+          "excludeUsers": [
+            "f3412a46-b97c-46ef-826d-706baa1b9673"
+          ],
+          "includeGroups": [],
+          "excludeGroups": [],
+          "includeRoles": [],
+          "excludeRoles": []
+        }
+      },
+      "grantControls": {
+        "operator": "OR",
+        "builtInControls": [
+          "mfa",
+          "compliantDevice",
+          "domainJoinedDevice"
+        ],
+        "customAuthenticationFactors": [],
+        "termsOfUse": []
+      }
+    }
+  ]
+}
