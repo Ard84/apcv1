@@ -1,5 +1,5 @@
 {
-    "displayName": "Require MFA for All Users",
+    "displayName": "Click2Run - Require MFA for All Users",
     "state": "enabledForReportingButNotEnforced",
     "sessionControls": null,
     "conditions": {
