@@ -1,5 +1,5 @@
 {
-    "displayName":  "Allow connection from Trusted locations",
+    "displayName":  "Click2Run - Allow connection from Trusted locations",
     "state":  "enabledForReportingButNotEnforced",
     "conditions":  {
         "applications":  {
