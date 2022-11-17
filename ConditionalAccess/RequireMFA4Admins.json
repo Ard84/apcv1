@@ -1,5 +1,5 @@
 {
-    "displayName": "Require MFA for Admin Accounts",
+    "displayName": "Click2Run - Require MFA for Admin Accounts",
     "state": "enabledForReportingButNotEnforced",
     "sessionControls": null,
     "conditions": {
