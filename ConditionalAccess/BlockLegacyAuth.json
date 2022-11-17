@@ -1,5 +1,5 @@
 {
-    "displayName":  "Block legacy authentication",
+    "displayName":  "Click2Run - Block legacy authentication",
     "state":  "enabledForReportingButNotEnforced",
     "sessionControls":  null,
     "conditions":  {
