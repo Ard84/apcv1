@@ -1,5 +1,5 @@
 { 
-    "displayName": "Require MFA for medium + sign-in risk", 
+    "displayName": "Click2Run - Require MFA for medium + sign-in risk", 
     "state": "enabledForReportingButNotEnforced", 
     "conditions": { 
         "signInRiskLevels": [ "high" ,
