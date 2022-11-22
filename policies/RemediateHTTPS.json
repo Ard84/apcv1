@@ -20,7 +20,7 @@
           "Disabled",
           "DeployIfNotExists"
         ],
-        "defaultValue": "DeployIfNotExists"
+        "defaultValue": "Deny"
       }
     },
     "policyRule": {
