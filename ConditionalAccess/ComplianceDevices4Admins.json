@@ -23,9 +23,7 @@
         },
         "users": {
           "includeUsers": [],
-          "excludeUsers": [
-            "f3412a46-b97c-46ef-826d-706baa1b9673"
-          ],
+          "excludeUsers": [],
           "includeGroups": [],
           "excludeGroups": [],
           "includeRoles": [
@@ -45,6 +43,18 @@
             "e8611ab8-c189-46e8-94e1-60213ab1f814"
           ],
           "excludeRoles": []
+        }
+      },
+    "platforms": {
+          "includePlatforms": [
+            "windows",
+            "macOS"
+          ],
+          "excludePlatforms": [
+            "android",
+            "iOS",
+            "linux"
+          ]
         }
       },
       "grantControls": {
