@@ -1,5 +1,5 @@
 {
-    "displayName": "Click2Run - Require MFA for Admin Actions",
+    "displayName": "Click2Run - Require MFA for Azure Management",
     "state": "enabledForReportingButNotEnforced",
     "sessionControls": null,
     "conditions": {
