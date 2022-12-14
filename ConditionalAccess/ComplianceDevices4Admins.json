@@ -45,18 +45,6 @@
           "excludeRoles": []
         }
       },
-    "platforms": {
-          "includePlatforms": [
-            "windows",
-            "macOS"
-          ],
-          "excludePlatforms": [
-            "android",
-            "iOS",
-            "linux"
-          ]
-        }
-      },
       "grantControls": {
         "operator": "OR",
         "builtInControls": [
